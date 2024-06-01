@@ -69,7 +69,10 @@ body {
   color: white;
 }
 #info_box_div3{
-  margin: 10px;
+    display: flex;
+    gap: 5px;
+    margin: 10px;
+    flex-wrap: wrap;
 }
 #info_box_div3 > span{
   color: rgb(0, 0, 0);
