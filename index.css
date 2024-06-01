@@ -1,0 +1,325 @@
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body { 
+    max-width: 100vw;
+    max-height: 100vh;
+    font-family: 'Times New Roman', Times, serif; 
+    background-color: rgb(104, 103, 103);
+
+}
+
+.scene {
+  max-width: 100vw;
+  height: 90vh;
+  /* border: 1px solid #CCC; */
+  /* margin: 80px; */
+  perspective: 400px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  /* background-color: #808080; */
+  gap: 100px;
+}
+
+/* side duppa starts */
+.info_box{
+  width: 40vh;
+  height: 72vh;
+  background-color: rgb(0, 0, 0);
+  margin: 50px;
+  border-radius: 80px 0 ;
+  color: rgb(255, 255, 255);
+}
+.inverted_color{
+  background-color: rgb(255, 255, 255) !important;
+  color: rgb(0, 0, 0) !important;
+}
+.inverted_color1{
+  background-color: rgb(0, 0, 0) !important;
+  color: rgb(255, 255, 255) !important;
+}
+#info_box_img{
+  width:30vh ;
+  height: 30vh;
+  margin: 30px 30px 0 30px;
+  border-radius: 50%;
+  background-color: rgb(123, 123, 123);
+  text-align: center;
+}
+#info_box_img > img{
+  width:inherit;
+  height:inherit;
+  border-radius: 50%;
+}
+#info_box_div1{
+  margin: 10px;
+  text-align: center;
+}
+#info_box_div2{
+  margin: 10px;
+}
+#info_box_div2 > div{
+  padding: 3px 0px;
+}
+#info_box_div2 a{
+  text-decoration: none;
+  color: white;
+}
+#info_box_div3{
+  margin: 10px;
+}
+#info_box_div3 > span{
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+/* side duppa end */
+
+.red{
+  color: red;
+}
+
+.cube {
+  width: 80vh;
+  height: 80vh;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-200px);
+  transition: transform 1s;
+}
+
+.cube.show-front  { 
+  transform: translateZ(-40vh) rotateY(   0deg); 
+}
+.cube.show-right  { 
+  transform: translateZ(-40vh) rotateY( -90deg); 
+}
+.cube.show-back   { 
+  transform: translateZ(-40vh) rotateY(-180deg); 
+}
+.cube.show-left   { 
+  transform: translateZ(-40vh) rotateY(  -270deg); 
+}
+/* .cube.show-top    { transform: translateZ(-200px) rotateX( -90deg); }
+.cube.show-bottom { transform: translateZ(-200px) rotateX(  90deg); } */
+
+.cube__face {
+  position: absolute;
+  width: 80vh;
+  height: 80vh;
+  border: 2px solid black;
+  font-size: large ;
+  font-weight: bold;
+  color: white;
+  /* text-align: center; */
+}
+
+.cube__face--front  { 
+  background: rgb(255, 255, 255); 
+  color: rgb(0, 0, 0);
+  font-size: x-large;
+  padding: 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+.cube__face--right  { 
+  background: rgb(0, 0, 0); 
+  color: rgb(255, 255, 255);
+
+}
+.cube__face--back   { 
+  background: rgb(255, 255, 255); 
+  color: rgb(0, 0, 0);
+
+}
+.cube__face--left   { 
+  background: rgb(0, 0, 0); 
+  color: rgb(255, 255, 255);
+
+}
+/* .cube__face--top    { background: rgb(0, 0, 255)}
+.cube__face--bottom { background: rgb(255, 0, 255); } */
+
+.cube__face--front  { transform: rotateY(  0deg) translateZ(40vh); }
+.cube__face--right  { transform: rotateY( 90deg) translateZ(40vh); }
+.cube__face--back   { transform: rotateY(180deg) translateZ(40vh); }
+.cube__face--left   { transform: rotateY(270deg) translateZ(40vh); }
+/* .cube__face--top    { transform: rotateX( 90deg) translateZ(40vh); }
+.cube__face--bottom { transform: rotateX(-90deg) translateZ(40vh); } */
+
+label { margin-right: 10px; }
+.radio-group  input{
+  display: none;
+}
+.radio-group{
+  height: 10vh;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    background: rgb(104, 103, 103);
+    padding: 10px;
+    font-size: x-large;
+    font-weight: bold;
+}
+.radio-group > label{
+  width: 200px;
+  background-color: lightslategray;
+  text-align: center;
+}
+.cube__face--right > h2,.cube__face--right > h3{
+  text-align: center;
+  margin: 20px;
+  text-shadow: 2px 2px 4px rgb(218, 165, 32);
+  /* color: rgb(218, 165, 32); */
+
+}
+.cube__face--back > h2{
+  text-shadow: 2px 2px 4px rgb(218, 165, 32);
+  text-align: center;
+  margin: 10px;
+}
+.Project_detials_div{
+  margin: 10px;
+}
+.Project_detials > .btn{
+  text-align: center;
+
+}
+
+.Project_detials >div > button{
+  margin: 5px;
+  padding: 5px 15px;
+  color: white;
+  background-color: rgb(255, 0, 0);
+  border-radius: 20px;
+}
+
+.Project_detials > .btn a{
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+}
+
+.Project_detials_learn{
+  font-size: medium;
+}
+.Project_detials #hover_traget{
+  /* text-shadow: 2px 2px 4px rgb(255, 119, 119); */
+  text-shadow: 2px 2px 4px rgb(218, 165, 32);
+  text-align: center;
+  margin-left: 5px;
+  background-color: rgb(117 114 114);
+
+}
+.Project_detials_div > h3{
+  /* text-shadow: 2px 2px 4px rgb(255, 119, 119); */
+  text-shadow: 1px 1px 2px rgb(255, 119, 119);
+  
+}
+.Project_detials{
+  margin: 5px;
+}
+.Project_detials > a{
+  text-decoration: none;
+  text-shadow: 2px 2px 4px rgb(218, 165, 32);
+  text-align: center;
+  background-color: rgb(117 114 114);
+}
+#about_div1{
+  margin: 10px; 
+  padding: 5px;
+  background-color: rgb(53, 53, 53);
+  box-shadow: 2px 2px 2px rgb(255, 119, 119);
+
+}
+#about_div2{
+  margin: 10px; 
+  padding: 5px;
+  background-color: rgb(53, 53, 53);
+  box-shadow: 2px 2px 4px rgb(255, 119, 119);
+}
+#about_div3{
+  margin: 10px; 
+  padding: 5px;
+  background-color: rgb(53, 53, 53);
+  box-shadow: 2px 2px 4px rgb(255, 119, 119);
+}
+.cube__face--left > form{
+  margin: 10px;
+  
+  border: 2px white;
+  
+}
+form input, form #message{
+  width: 90%;
+  margin: 10px; 
+  padding: 5px;
+  color: white;
+  background-color: rgb(53, 53, 53);
+  box-shadow: 2px 2px 4px rgb(255, 119, 119);
+
+}
+
+#message{
+  width: 90%;
+  height: 250px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+#send_message_div{
+  text-align: center;
+}
+#send_message{
+  margin: 5px;
+  padding: 10px;
+  color: white;
+  background-color: rgb(255, 0, 0);
+  border-radius: 20px;
+}
+
+.hover_traget {
+  position: relative;
+  background-color: rgb(117, 114, 114);
+  text-shadow: 2px 2px 4px rgb(218, 165, 32);
+  text-align: center;
+  color: black;
+}
+
+.hover_traget .hover_message {
+  visibility: hidden;
+  width: 200px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px ;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.hover_traget .hover_message::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.hover_traget:hover .hover_message {
+  visibility: visible;
+}
