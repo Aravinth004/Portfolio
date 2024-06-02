@@ -337,7 +337,7 @@ form input, form #message{
       padding: 20px 10px;
     }
     .radio-group{
-      display: inline;
+/*       display: inline; */
       gap: 20px;
     } 
     .radio-group > label{
