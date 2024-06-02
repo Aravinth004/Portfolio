@@ -326,3 +326,18 @@ form input, form #message{
 .hover_traget:hover .hover_message {
   visibility: visible;
 }
+
+
+@media screen and (min-width:300px)  and (max-width:770px) {
+    .scene{
+      height: unset;
+      display: block;
+    }
+    .info_box{
+      padding: 20px 10px;
+    }
+    .radio-group{
+      gap: 20px;
+    } 
+
+}
