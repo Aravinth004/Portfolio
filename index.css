@@ -339,5 +339,9 @@ form input, form #message{
     .radio-group{
       gap: 20px;
     } 
+    .radio-group > label{
+      width: unset;
+      padding: 0px 5px;
+    }
 
 }
